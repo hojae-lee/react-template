@@ -1,7 +1,10 @@
 {
   "name": "react-template",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A React v18 template with Vite, TypeScript, Storybook, TailwindCSS, and more.",
+  "author": "hojae-lee <hojae-lee@github.com>",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

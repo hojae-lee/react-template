@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React, { Suspense } from 'react'
 import { createBrowserRouter, Outlet } from 'react-router-dom'
 
 // common
@@ -8,6 +8,7 @@ import NotFound from '@common/components/NotFound.tsx'
 
 // pages
 import home from '@ui/home/router.tsx'
+
 // 라우터 설정
 const router = createBrowserRouter([
   {

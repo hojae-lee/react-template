@@ -4,7 +4,8 @@ const apiClient = axios.create({
   baseURL: 'https://api.example.com',
   headers: {
     'Content-Type': 'application/json'
-  }
+  },
+  timeout: 5000
 })
 
 apiClient.interceptors.request.use(

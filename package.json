@@ -26,6 +26,7 @@
     "react-hook-form": "^7.52.1",
     "react-router-dom": "^6.24.1",
     "sort-by": "^1.2.0",
+    "swr": "^2.2.5",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

@@ -5078,6 +5078,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"client-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "client-only@npm:0.0.1"
+  checksum: 10c0/9d6cfd0c19e1c96a434605added99dff48482152af791ec4172fb912a71cff9027ff174efd8cdb2160cc7f377543e0537ffc462d4f279bc4701de3f2a3c4b358
+  languageName: node
+  linkType: hard
+
 "clone-deep@npm:^4.0.1":
   version: 4.0.1
   resolution: "clone-deep@npm:4.0.1"
@@ -9552,6 +9559,7 @@ __metadata:
     sass: "npm:^1.77.6"
     sort-by: "npm:^1.2.0"
     storybook: "npm:^8.1.11"
+    swr: "npm:^2.2.5"
     tailwindcss: "npm:^3.4.4"
     typescript: "npm:^5.2.2"
     vite: "npm:^5.3.1"
@@ -10539,6 +10547,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swr@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "swr@npm:2.2.5"
+  dependencies:
+    client-only: "npm:^0.0.1"
+    use-sync-external-store: "npm:^1.2.0"
+  peerDependencies:
+    react: ^16.11.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/731488d609ac6db60626632e3f76b046f28400b44504b3dfa69231a645127579b1add7a1595e5a6c718e24c80f1399506883bb456ca83c1b621357a0bf5a2a94
+  languageName: node
+  linkType: hard
+
 "tabbable@npm:^6.0.0":
   version: 6.2.0
   resolution: "tabbable@npm:6.2.0"
@@ -11156,6 +11176,15 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.2.0":
+  version: 1.2.2
+  resolution: "use-sync-external-store@npm:1.2.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/23b1597c10adf15b26ade9e8c318d8cc0abc9ec0ab5fc7ca7338da92e89c2536abd150a5891bf076836c352fdfa104fc7231fb48f806fd9960e0cbe03601abaf
   languageName: node
   linkType: hard
 

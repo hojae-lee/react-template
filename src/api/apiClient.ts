@@ -1,12 +1,6 @@
 import apiClient from './config.ts'
 
-interface RequestParams {
-  url: string
-  params?: Record<string, any>
-  data?: any
-}
-
-export const getRequest = async ({ url, params }: RequestParams) => {
+export const getRequest = async (url: string, params?: Record<string, any>) => {
   try {
     const response = await apiClient.get(url, { params })
     return response.data
@@ -16,7 +10,7 @@ export const getRequest = async ({ url, params }: RequestParams) => {
   }
 }
 
-export const postRequest = async ({ url, data }: RequestParams) => {
+export const postRequest = async (url: string, data?: any) => {
   try {
     const response = await apiClient.post(url, data)
     return response.data
@@ -26,7 +20,7 @@ export const postRequest = async ({ url, data }: RequestParams) => {
   }
 }
 
-export const updateRequest = async ({ url, data }: RequestParams) => {
+export const updateRequest = async (url: string, data?: any) => {
   try {
     const response = await apiClient.put(url, data)
     return response.data
@@ -36,7 +30,7 @@ export const updateRequest = async ({ url, data }: RequestParams) => {
   }
 }
 
-export const deleteRequest = async ({ url, params }: RequestParams) => {
+export const deleteRequest = async (url: string, params?: any) => {
   try {
     const response = await apiClient.delete(url, { params })
     return response.data

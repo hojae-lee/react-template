@@ -1,6 +1,6 @@
 import apiClient from './config.ts'
 
-export const getRequest = async (url: string, params?: Record<string, any>) => {
+export const getRequest = async (url: string, params?: any) => {
   try {
     const response = await apiClient.get(url, { params })
     return response.data

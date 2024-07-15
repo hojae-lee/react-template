@@ -1,11 +1,10 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
     "composite": true,
+    "skipLibCheck": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
-    "allowImportingTsExtensions": true
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "src/mocks/**/*.ts"]
 }

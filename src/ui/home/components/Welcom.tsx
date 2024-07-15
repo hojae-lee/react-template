@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { WelcomeType } from '../types/index.ts'
 
 const Welcome = ({ welcome = 'Welcom to My App' }: WelcomeType) => (

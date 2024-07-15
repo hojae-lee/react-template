@@ -1,18 +1,13 @@
-import React, { TableHTMLAttributes } from 'react';
+import { TableHTMLAttributes } from 'react'
 
 interface TableProps extends TableHTMLAttributes<HTMLTableElement> {
-  headers: string[];
-  data: any[][];
+  headers: string[]
+  data: any[][]
 }
 
-export const Table = ({
-  headers,
-  data,
-  className,
-  ...props
-}: TableProps): JSX.Element => {
-  const baseStyle = 'min-w-full divide-y divide-gray-200';
-  const classes = `${baseStyle} ${className || ''}`;
+export const Table = ({ headers, data, className, ...props }: TableProps): JSX.Element => {
+  const baseStyle = 'min-w-full divide-y divide-gray-200'
+  const classes = `${baseStyle} ${className || ''}`
 
   return (
     <div className="overflow-x-auto">
@@ -34,10 +29,7 @@ export const Table = ({
           {data.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((cell, cellIndex) => (
-                <td
-                  key={cellIndex}
-                  className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                >
+                <td key={cellIndex} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {cell}
                 </td>
               ))}
@@ -46,5 +38,5 @@ export const Table = ({
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}

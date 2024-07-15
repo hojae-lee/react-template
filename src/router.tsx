@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { createBrowserRouter, Outlet } from 'react-router-dom'
 
 // common

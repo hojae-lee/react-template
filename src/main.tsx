@@ -6,8 +6,20 @@ import router from './router.tsx'
 
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-)
+async function enableMocking() {
+  if (process.env.NODE_ENV !== 'development') {
+    return
+  }
+
+  const { worker } = await import('./mocks/browser.js')
+
+  return worker.start()
+}
+
+enableMocking().then(() => {
+  ReactDOM.createRoot(document.getElementById('root')!).render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  )
+})

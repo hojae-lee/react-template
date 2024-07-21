@@ -52,7 +52,7 @@ To create a new project based on this template, follow these steps:
 - `react`: 사용자 인터페이스를 구축하기 위한 JavaScript 라이브러리입니다.
 - `react-dom`: DOM 관련 렌더링 경로의 진입점입니다.
 - `react-hook-form`: 성능이 우수하고 유연하며 쉬운 사용자 정의 유효성 검사를 지원하는 폼 라이브러리입니다.
-- `react-router-dom`: React를 위한 선언적 라우팅 라이브러리입니다.
+- `react-router-dom`: React를 위한 라우팅 라이브러리입니다.
 - `sort-by`: 속성에 따라 객체를 정렬하는 유틸리티입니다.
 - `zustand`: 작고 빠르며 확장 가능한 상태 관리 솔루션입니다.
 
@@ -65,12 +65,12 @@ To create a new project based on this template, follow these steps:
 - `autoprefixer`: CSS를 파싱하고 벤더 접두사를 추가하는 PostCSS 플러그인입니다.
 - `eslint`, `eslint-config-prettier`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`, `eslint-plugin-storybook`: ESLint 구성 및 플러그인들입니다.
 - `postcss`: JavaScript 플러그인을 사용하여 CSS를 변환하는 도구입니다.
-- `prettier`: 의견이 분분한 코드 포매터입니다.
+- `prettier`: 코드 포매터입니다.
 - `sass`: CSS로 컴파일되는 스크립트 언어인 전처리기입니다.
 - `storybook`: UI 개발을 위한 도구입니다.
 - `tailwindcss`: 유틸리티 기반의 CSS 프레임워크입니다.
 - `typescript`: JavaScript의 상위 집합으로 정적 타입을 지원하며 일반 JavaScript로 컴파일됩니다.
-- `vite`: 다음 세대의 프론트엔드 도구입니다.
+- `vite`: 빠른 번들러 입니다.
 
 이 리스트는 각 패키지의 주요 역할과 프로젝트 개발 및 테스트에 기여하는 방식을 이해하는 데 도움이 될 것입니다.
 

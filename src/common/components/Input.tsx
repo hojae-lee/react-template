@@ -5,7 +5,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: string
 }
 
-export const Input = ({ label, error, className, ...props }: InputProps): JSX.Element => {
+const Input = ({ label, error, className, ...props }: InputProps): JSX.Element => {
   const baseStyle = 'w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
   const errorStyle = error ? 'border-red-500' : 'border-gray-300'
   const classes = `${baseStyle} ${errorStyle} ${className || ''}`
@@ -18,3 +18,5 @@ export const Input = ({ label, error, className, ...props }: InputProps): JSX.El
     </div>
   )
 }
+
+export default Input

@@ -5,7 +5,7 @@ interface TableProps extends TableHTMLAttributes<HTMLTableElement> {
   data: any[][]
 }
 
-export const Table = ({ headers, data, className, ...props }: TableProps): JSX.Element => {
+const Table = ({ headers, data, className, ...props }: TableProps): JSX.Element => {
   const baseStyle = 'min-w-full divide-y divide-gray-200'
   const classes = `${baseStyle} ${className || ''}`
 
@@ -40,3 +40,5 @@ export const Table = ({ headers, data, className, ...props }: TableProps): JSX.E
     </div>
   )
 }
+
+export default Table

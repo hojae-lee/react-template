@@ -21,7 +21,7 @@
       "@assets/*": ["src/assets/*"],
       "@common/*": ["src/common/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@ui/*": ["src/ui/*"]
+      "@entities/*": ["src/entities/*"]
     }
   },
   "include": ["src"],

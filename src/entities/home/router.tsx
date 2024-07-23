@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import { lazy } from 'react'
 
 const Home = lazy(() => import('@entities/home/Home.tsx'))
 

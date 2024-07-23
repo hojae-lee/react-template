@@ -5,13 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg'
 }
 
-export const Button = ({
-  children,
-  variant = 'primary',
-  size = 'md',
-  className,
-  ...props
-}: ButtonProps): JSX.Element => {
+const Button = ({ children, variant = 'primary', size = 'md', className, ...props }: ButtonProps): JSX.Element => {
   const baseStyle = 'font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2'
 
   const variants = {
@@ -34,3 +28,5 @@ export const Button = ({
     </button>
   )
 }
+
+export default Button

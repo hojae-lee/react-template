@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Welcome from './components/Welcom.tsx'
+import Welcome from '@entities/home/components/Welcom.tsx'
 
 const Home = () => {
   useEffect(() => {

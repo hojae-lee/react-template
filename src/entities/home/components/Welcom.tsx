@@ -1,4 +1,4 @@
-import { WelcomeType } from '../types/index.ts'
+import { WelcomeType } from '@entities/home/types/index.ts'
 
 const Welcome = ({ welcome = 'Welcom to My App' }: WelcomeType) => (
   <div className="mb-8">

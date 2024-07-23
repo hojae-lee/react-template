@@ -7,7 +7,7 @@ import Loading from '@common/components/Loading.tsx'
 import NotFound from '@common/components/NotFound.tsx'
 
 // pages
-import home from '@ui/home/router.tsx'
+import home from '@entities/home/router.tsx'
 
 // 라우터 설정
 const router = createBrowserRouter([

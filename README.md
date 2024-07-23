@@ -1,7 +1,8 @@
 # React v18 Template
 
 React v18 템플릿이며 Vite, TypeScript, Storybook, TailwindCSS 등으로 구성되어 있습니다.
-또한, MSW (Mock Service Worker)를 사용하여 API 모킹 서비스를 제공합니다.
+MSW (Mock Service Worker)를 사용하여 API 모킹 서비스를 제공합니다.
+Vitest + react testing library 기반의 테스트를 제공합니다.
 
 해당 프로젝트는 필요시 계속 업데이트 진행합니다.
 
@@ -43,6 +44,7 @@ To create a new project based on this template, follow these steps:
 - `yarn lint`: 코드를 lint하는 데에 ESLint를 실행합니다.
 - `yarn lint:fix`: ESLint를 실행하고 발견된 linting 문제들을 수정합니다.
 - `yarn format`: Prettier를 사용하여 코드를 포맷팅합니다.
+- `yarn test`: vitest + react testing lib 기반의 테스트를 합니다.
 
 ### Dependencies
 

@@ -22,7 +22,8 @@
       "@common/*": ["src/common/*"],
       "@layouts/*": ["src/layouts/*"],
       "@entities/*": ["src/entities/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]

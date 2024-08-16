@@ -13,7 +13,15 @@ async function enableMocking() {
 
   const { worker } = await import('./mocks/browser.js')
 
-  return worker.start()
+  return worker.start({
+    onUnhandledRequest: (request, print) => {
+      if (!request.url.includes('/api/') || request.url.includes('src/api/')) {
+        return
+      }
+
+      print.warning()
+    }
+  })
 }
 
 enableMocking().then(() => {

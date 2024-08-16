@@ -1,21 +1,31 @@
-import { getRequest, postRequest, updateRequest, deleteRequest } from '../apiClient.ts'
+import { getRequest, postRequest, updateRequest, deleteRequest } from '@/api/apiClient.ts'
 
-export const getUsers = async () => {
-  return await getRequest('/users')
+export const getUsers = () => {
+  const url = '/api/users'
+  const fetcher = () => getRequest(url)
+  return { url, fetcher }
 }
 
-export const getUserById = async (userId: string) => {
-  return await getRequest(`/users/${userId}`)
+export const getUserById = (userId: string) => {
+  const url = `/api/users/${userId}`
+  const fetcher = (params?: any) => getRequest(url, params)
+  return { url, fetcher }
 }
 
-export const createUser = async (userData: any) => {
-  return await postRequest('/users', userData)
+export const createUser = () => {
+  const url = '/api/users'
+  const fetcher = (userData: any) => postRequest(url, userData)
+  return { url, fetcher }
 }
 
-export const updateUser = async (userId: string, userData: any) => {
-  return await updateRequest(`/users/${userId}`, userData)
+export const updateUser = (userId: string) => {
+  const url = `/api/users/${userId}`
+  const fetcher = (userData: any) => updateRequest(url, userData)
+  return { url, fetcher }
 }
 
-export const deleteUser = async (userId: string) => {
-  return await deleteRequest(`/users/${userId}`)
+export const deleteUser = (userId: string) => {
+  const url = `/api/users/${userId}`
+  const fetcher = () => deleteRequest(url)
+  return { url, fetcher }
 }

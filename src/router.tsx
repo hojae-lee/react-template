@@ -8,6 +8,7 @@ import NotFound from '@common/components/NotFound.tsx'
 
 // pages
 import home from '@/entities/home/router.tsx'
+import calendar from '@/entities/calendar/router.tsx'
 
 // 라우터 설정
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
         </Suspense>
       </Layout>
     ),
-    children: [...home],
+    children: [...home, ...calendar],
     errorElement: <NotFound />
   }
 ])

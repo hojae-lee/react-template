@@ -1978,6 +1978,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fullcalendar/core@npm:^6.1.15":
+  version: 6.1.15
+  resolution: "@fullcalendar/core@npm:6.1.15"
+  dependencies:
+    preact: "npm:~10.12.1"
+  checksum: 10c0/628445dcbfcf9c5a4012cde3ba814af7b74db66c4ec71743fe9c5f5376f96d4b18922d257ad8d5ccf1211b2415d1094dd05e2f4f3324d4dbe880a94f7e5793b7
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/daygrid@npm:^6.1.15":
+  version: 6.1.15
+  resolution: "@fullcalendar/daygrid@npm:6.1.15"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.15
+  checksum: 10c0/52ba7a479675aa8e2bd36ca6c00c9cc28f11539710cf7a233e8657835b29fe21954e732a23c9b7c7c345c5b6b3c08e3af24ce9125ec28478176cce1b3e7d0da4
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/react@npm:^6.1.15":
+  version: 6.1.15
+  resolution: "@fullcalendar/react@npm:6.1.15"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.15
+    react: ^16.7.0 || ^17 || ^18 || ^19
+    react-dom: ^16.7.0 || ^17 || ^18 || ^19
+  checksum: 10c0/8185159c2fa02b31012b84c19f340b835383858d04079bcfb5ccbd1967116d862dbdb863762d99c374433a5364873727fc6f9d7356b2b1d1866ae5d50819ff6e
+  languageName: node
+  linkType: hard
+
 "@headlessui/react@npm:^2.1.2":
   version: 2.1.2
   resolution: "@headlessui/react@npm:2.1.2"
@@ -9643,6 +9672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact@npm:~10.12.1":
+  version: 10.12.1
+  resolution: "preact@npm:10.12.1"
+  checksum: 10c0/c77a55e897dcf298b7aa13637fed29744d3cf6c083f2832856e8551dbf27303c8b6946569736de16b05cba15c0e44ad404beb236ad9e36583a6fc5e2efad7777
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -10059,6 +10095,9 @@ __metadata:
   resolution: "react-template@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:^1.6.1"
+    "@fullcalendar/core": "npm:^6.1.15"
+    "@fullcalendar/daygrid": "npm:^6.1.15"
+    "@fullcalendar/react": "npm:^6.1.15"
     "@headlessui/react": "npm:^2.1.2"
     "@heroicons/react": "npm:^2.1.4"
     "@storybook/addon-essentials": "npm:^8.1.11"

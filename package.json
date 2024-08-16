@@ -17,6 +17,9 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
     "axios": "^1.7.2",

@@ -4,7 +4,7 @@ React v18 템플릿이며 Vite, TypeScript, Storybook, TailwindCSS 등으로 구
 MSW (Mock Service Worker)를 사용하여 API 모킹 서비스를 제공합니다. <br />
 Vitest + react testing library 기반의 테스트를 제공합니다.
 
-해당 프로젝트는 필요시 계속 업데이트 진행합니다.
+필요로 하는 예제가 있으면, 업데이트 합니다.
 
 ## Requirements
 
